@@ -81,7 +81,6 @@ function movie(inputs) {
             console.log("Next time you should try and enter something...")
         }
         else if (!error && response.statusCode == 200) {
-            console.log("you got here")
             console.log("The movie's name is " + body.Title);
             console.log("The movie's came out in " + body.Year);
             console.log("This movie has an IMDB rating of " + body.imdbRating);
