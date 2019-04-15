@@ -9,21 +9,21 @@ This is uses the Bands-in-town, OMDB, and Spotify APIs to pull information based
 
 ###No command entered
 
-![alt text] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.17.09.png)
+![alt text1] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.17.09.png)
 
 ###Command entered
 
-![alt text} (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.18.12.png)
+![alt text2] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.18.12.png)
 
 ##movie-this in action
 
 ###No command entered
 
-![alt text] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.20.07.png)
+![alt text3] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.20.07.png)
 
 ###Command Entered
 
-![alt text} (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.19.41.png)
+![alt text4] (https://github.com/tayler176/LIRI/blob/master/images/Screen%20Shot%202019-04-15%20at%2018.19.41.png)
 
 ##do-what-it-says
 
