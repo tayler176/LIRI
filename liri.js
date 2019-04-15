@@ -1,13 +1,11 @@
 var axios = require("axios");
+var fs = require("fs");
 var moment = require('moment');
 moment().format();
 require("dotenv").config();
 let keys = require("./keys.js")
 var Spotify = require('node-spotify-api');
 let spotify = new Spotify(keys.spotify);
-
-
-
 
 // Takes in all of the command line arguments
 var inputString = process.argv;
@@ -55,20 +53,15 @@ function concert(inputs) {
 };
 
 function spotifyIt(inputs) {
-
-    //  * If no song is provided then your program will default to "The Sign" by Ace of Base.
     if (!inputs) {
         inputs = "The Fire The Roots";
     }
-
     spotify.search({ type: 'track', query: inputs }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-
         else {
             for (i = 0; i < data.tracks.items.length && i < 3; i++) {
-
                 var spotifyThings = data.tracks.items[i];
                 console.log("Artist: " + spotifyThings.artists[0].name)
                 console.log("Song Name: " + spotifyThings.name)
@@ -103,8 +96,19 @@ function movie(inputs) {
 
 function doIt() {
     if (!inputs) {
-        // inputs = ;
-        spotifyIt("I want it That Way");
+        fs.readFile("random.txt", "utf8", function(err, data) {
+            if (err) {
+              return console.log(err);
+            }
+            var doingthings = data.split(","); 
+            command = doingthings[0];
+            inputs = doingthings[1];
+            if(command === "spotify-this-song"){
+                spotifyIt(inputs)
+            }
+          });
+          
+        // spotifyIt("I want it That Way");
     }
 
 }
